@@ -1,6 +1,6 @@
 # myapp.rb
 require 'sinatra/base'
-require_all 'bot'
+require 'bot/listen'
 
 class MyApp < Sinatra::Base
 

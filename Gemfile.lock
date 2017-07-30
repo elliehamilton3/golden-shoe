@@ -8,6 +8,9 @@ GEM
     coderay (1.1.1)
     domain_name (0.5.20170404)
       unf (>= 0.0.5, < 1.0.0)
+    facebook-messenger (1.0.0)
+      httparty (~> 0.13, >= 0.13.7)
+      rack (>= 1.6.4)
     http (2.2.2)
       addressable (~> 2.3)
       http-cookie (~> 1.0)
@@ -17,7 +20,10 @@ GEM
       domain_name (~> 0.5)
     http-form_data (1.0.3)
     http_parser.rb (0.6.0)
+    httparty (0.14.0)
+      multi_xml (>= 0.5.2)
     method_source (0.8.2)
+    multi_xml (0.6.0)
     mustermann (1.0.0)
     pry (0.10.4)
       coderay (~> 1.1.0)
@@ -46,6 +52,7 @@ PLATFORMS
 
 DEPENDENCIES
   api-ai-ruby
+  facebook-messenger
   pry
   require_all
   shotgun
