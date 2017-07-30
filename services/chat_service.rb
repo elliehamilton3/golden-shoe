@@ -3,8 +3,7 @@ class ChatService
 
   def initialize(uid)
     @client = ApiAiRuby::Client.new(
-      client_access_token: ,
-      # ENV['API_AI_CLIENT_ACCESS_TOKEN'],
+      client_access_token: ENV['API_AI_CLIENT_ACCESS_TOKEN'],
       api_session_id: uid
     )
   end

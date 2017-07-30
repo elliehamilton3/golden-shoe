@@ -1,5 +1,6 @@
 # myapp.rb
 require 'sinatra/base'
+require_all 'bot'
 
 class MyApp < Sinatra::Base
 
@@ -17,5 +18,9 @@ class MyApp < Sinatra::Base
 
   get '/chat' do
     erb :chat
+  end
+
+  get '/bot' do
+    mount Facebook::Messenger::Server
   end
 end
