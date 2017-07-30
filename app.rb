@@ -1,0 +1,21 @@
+# myapp.rb
+require 'sinatra/base'
+
+class MyApp < Sinatra::Base
+
+  configure do
+    set :app_file, __FILE__
+  end
+
+  get '/' do
+    erb :index
+  end
+
+  get '/frank-says' do
+    'Put this in your pipe & smoke it!'
+  end
+
+  get '/chat' do
+    erb :chat
+  end
+end

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='UTF-8' />
+    <title>Golden Shoe || Chat</title>
+    <style>
+    .fbmessenger{
+  position:fixed;
+  bottom:15px;
+  right:15px;
+  z-index:15;
+}
+
+.fbmessenger img{
+  width:50px;
+ filter: drop-shadow(2px 6px 4px rgba(0,0,0,.3));
+-webkit-filter: drop-shadow(2px 6px 4px rgba(0,0,0,.3));
+
+
+}
+
+.tooltiptext {
+    width: 120px;
+    background-color: white;
+    color:#2c2c2c; ;
+    text-align: center;
+    padding: 5px 0;
+    border:1px solid #eeeeee;
+    border-radius: 6px;
+    position: fixed;
+    bottom:30px;
+	right:75px;
+  font-family:'abel';
+  text-transform:uppercase;
+ filter: drop-shadow(2px 6px 4px rgba(0,0,0,.3));
+-webkit-filter: drop-shadow(2px 6px 4px rgba(0,0,0,.3));
+
+
+}
+
+.tooltiptext:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent transparent #eeeeee;
+}
+</style>
+    <script>
+      function OpenInNewTab() {
+        var screenwidth = screen.width-500;
+        window.open("http://m.me/goldenshoelondon", '_blank',"width=500,height=800,left="+screenwidth);
+      }
+    </script>
+  </head>
+
+  <body class=''>
+
+    <a href="http://m.me/goldenshoelondon" target="_blank" onclick="OpenInNewTab();"> <!-- m.me/facebookpage works for any facebook page -->
+      <div class="fbmessenger">
+      <img src="https://lh5.ggpht.com/0VYAvZLR9YhosF-thqm8xl8EWsCfrEY_uk2og2f59K8IOx5TfPsXjFVwxaHVnUbuEjc=w300" /> <!-- I host the file directly but I'm hotlinking from the Google Play store here for the png file -->
+      <span class="tooltiptext mobilehidden">Message Us</span>
+      </div>
+      </a>
+</div>
+</body>
+</html>
