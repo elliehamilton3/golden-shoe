@@ -20,7 +20,7 @@ class MyApp < Sinatra::Base
     erb :chat
   end
 
-  get '/bot' do
-    mount Facebook::Messenger::Server
-  end
+  # get '/bot' do
+  #   mount Facebook::Messenger::Server
+  # end
 end
